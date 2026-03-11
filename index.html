@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>💰 طريقة حقيقية لكسب 50$ للساعة</title>
+    <title>💰 إربح 50 دولار للساعة</title>
     <style>
         /* Reset أساسي */
         * {
@@ -56,13 +56,13 @@
 
         /* العنوان الرئيسي */
         h1 {
-            font-size: 34px;
-            font-weight: 800;
+            font-size: 42px;
+            font-weight: 900;
             letter-spacing: -0.5px;
-            line-height: 1.4;
+            line-height: 1.3;
             color: #ffffff;
             text-shadow: 0 4px 12px rgba(0,0,0,0.6);
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .price-highlight {
@@ -70,7 +70,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            font-size: 42px;
+            font-size: 52px;
             font-weight: 900;
             display: inline-block;
             padding: 0 4px;
@@ -81,23 +81,37 @@
             margin: 15px 0 0;
         }
 
-        /* الزر البنفسجي المتحرك */
+        /* الزر الأصفر المتحرك مع الصورة */
         .cta-button {
-            display: inline-block;
+            display: flex; /* استخدام flex لتوسيط الصورة */
+            align-items: center;
+            justify-content: center;
             width: 100%;
-            background: linear-gradient(145deg, #a855f7, #8b5cf6, #7c3aed);
+            background: linear-gradient(145deg, #FFD700, #FDB913, #FFA500); /* تدرج أصفر */
             color: white;
-            font-size: 32px;
+            font-size: 42px;
             font-weight: 900;
-            padding: 20px 20px;
+            padding: 15px 20px; /* تقليل الحشوة العلوية والسفلية قليلاً */
             border-radius: 100px;
             text-decoration: none;
-            box-shadow: 0 15px 25px -8px rgba(124, 58, 237, 0.7), 0 4px 0 0 #5b21b6, 0 0 20px #c084fc;
-            border: 2px solid #e9d5ff;
+            box-shadow: 0 15px 25px -8px rgba(255, 215, 0, 0.7), 0 4px 0 0 #B8860B, 0 0 20px #FFD700; /* ظل ذهبي */
+            border: 2px solid #FFEC9E;
             transition: all 0.15s ease;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             -webkit-tap-highlight-color: transparent;
             animation: gentle-shake 2s ease-in-out infinite;
+            min-height: 80px; /* ضمان ارتفاع مناسب للصورة */
+        }
+
+        /* تنسيق الصورة داخل الزر */
+        .cta-button img {
+            max-width: 120px; /* حجم الصورة - يمكنك تعديله */
+            height: auto;
+            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+            transition: transform 0.2s ease;
+        }
+
+        .cta-button:active img {
+            transform: scale(0.95);
         }
 
         /* حركة اهتزاز خفيفة */
@@ -110,26 +124,18 @@
 
         .cta-button:active {
             transform: translateY(5px);
-            box-shadow: 0 8px 20px -4px #5b21b6, 0 2px 0 0 #3b0764, 0 0 30px #c084fc;
+            box-shadow: 0 8px 20px -4px #B8860B, 0 2px 0 0 #8B6910, 0 0 30px #FFD700;
             animation: none;
-        }
-
-        .cta-button span {
-            font-size: 36px;
-            margin: 0 8px;
-            filter: drop-shadow(0 2px 3px black);
-            vertical-align: middle;
-            color: #ffffff;
         }
 
         /* تحسين شاشات صغيرة جداً */
         @media (max-width: 380px) {
             body { padding: 15px 16px 0; }
             .card { padding: 20px 16px 25px; margin-top: 5px; }
-            h1 { font-size: 28px; }
-            .price-highlight { font-size: 36px; }
-            .cta-button { font-size: 26px; padding: 16px; }
-            .cta-button span { font-size: 30px; }
+            h1 { font-size: 34px; }
+            .price-highlight { font-size: 42px; }
+            .cta-button { padding: 12px 15px; min-height: 70px; }
+            .cta-button img { max-width: 100px; }
             .emoji-badge { font-size: 65px; }
         }
     </style>
@@ -144,16 +150,19 @@
 
         <!-- العنوان الرئيسي -->
         <h1>
-            طريقة حقيقية <br> لكسب <span class="price-highlight">50$</span> للساعة
+            إربح <span class="price-highlight">50 دولار</span> <br>
+            للساعة
         </h1>
 
-        <!-- الزر البنفسجي المتحرك مع النص الجديد -->
+        <!-- الزر الأصفر مع صورة السهم -->
         <div class="btn-wrapper">
             <a href="https://said-tv.com/%d8%b1%d8%a8%d8%ad-%d8%a3%d9%83%d8%ab%d8%b1-%d9%85%d9%86-50-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d9%84%d8%b3%d8%a7%d8%b9%d8%a9-%d9%88%d8%a8%d8%af%d9%88%d9%86-%d8%b1%d8%a3%d8%b3_%d9%85%d8%a7%d9%84/" 
                class="cta-button" 
                target="_blank" 
                rel="noopener noreferrer">
-                <span>$</span> اكتشف مجانًا <span>$</span>
+                <img src="https://said-tv.com/wp-content/uploads/2026/03/png-clipart-arrow-computer-icons-indicator-arrows-angle-triangle-removebg-preview.png" 
+                     alt="سهم التوجيه" 
+                     width="150" height="75">
             </a>
         </div>
     </div>
