@@ -81,36 +81,44 @@
             margin: 15px 0 0;
         }
 
-        /* الزر الأصفر المتحرك مع الصورة */
+        /* الزر الأصفر المتحرك */
         .cta-button {
-            display: flex; /* استخدام flex لتوسيط الصورة */
+            display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
-            background: linear-gradient(145deg, #FFD700, #FDB913, #FFA500); /* تدرج أصفر */
-            color: white;
-            font-size: 42px;
+            background: linear-gradient(145deg, #FFD700, #FDB913, #FFA500);
+            color: #000000;
+            font-size: 90px;
             font-weight: 900;
-            padding: 15px 20px; /* تقليل الحشوة العلوية والسفلية قليلاً */
+            padding: 15px 20px;
             border-radius: 100px;
             text-decoration: none;
-            box-shadow: 0 15px 25px -8px rgba(255, 215, 0, 0.7), 0 4px 0 0 #B8860B, 0 0 20px #FFD700; /* ظل ذهبي */
+            box-shadow: 0 15px 25px -8px rgba(255, 215, 0, 0.7), 0 4px 0 0 #B8860B, 0 0 20px #FFD700;
             border: 2px solid #FFEC9E;
             transition: all 0.15s ease;
             -webkit-tap-highlight-color: transparent;
             animation: gentle-shake 2s ease-in-out infinite;
-            min-height: 80px; /* ضمان ارتفاع مناسب للصورة */
+            min-height: 100px;
         }
 
-        /* تنسيق الصورة داخل الزر */
-        .cta-button img {
-            max-width: 120px; /* حجم الصورة - يمكنك تعديله */
-            height: auto;
-            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+        /* علامة << أصغر حجماً وأعلى قليلاً */
+        .cta-button span {
+            display: inline-block;
+            font-size: 70px;  /* تصغير الحجم */
+            line-height: 1;
+            font-weight: 900;
+            letter-spacing: 8px;
+            filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.5));
             transition: transform 0.2s ease;
+            transform: scale(1);
+            text-align: center;
+            margin: 0 auto;
+            margin-top: -10px;  /* رفع العلامة للأعلى */
+            unicode-bidi: embed;
         }
 
-        .cta-button:active img {
+        .cta-button:active span {
             transform: scale(0.95);
         }
 
@@ -134,8 +142,8 @@
             .card { padding: 20px 16px 25px; margin-top: 5px; }
             h1 { font-size: 34px; }
             .price-highlight { font-size: 42px; }
-            .cta-button { padding: 12px 15px; min-height: 70px; }
-            .cta-button img { max-width: 100px; }
+            .cta-button { font-size: 70px; padding: 12px 15px; min-height: 80px; }
+            .cta-button span { font-size: 60px; letter-spacing: 6px; margin-top: -8px; }
             .emoji-badge { font-size: 65px; }
         }
     </style>
@@ -154,15 +162,13 @@
             للساعة
         </h1>
 
-        <!-- الزر الأصفر مع صورة السهم -->
+        <!-- الزر الأصفر مع << أصغر وأعلى -->
         <div class="btn-wrapper">
             <a href="https://said-tv.com/%d8%b1%d8%a8%d8%ad-%d8%a3%d9%83%d8%ab%d8%b1-%d9%85%d9%86-50-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d9%84%d8%b3%d8%a7%d8%b9%d8%a9-%d9%88%d8%a8%d8%af%d9%88%d9%86-%d8%b1%d8%a3%d8%b3_%d9%85%d8%a7%d9%84/" 
                class="cta-button" 
                target="_blank" 
                rel="noopener noreferrer">
-                <img src="https://said-tv.com/wp-content/uploads/2026/03/png-clipart-arrow-computer-icons-indicator-arrows-angle-triangle-removebg-preview.png" 
-                     alt="سهم التوجيه" 
-                     width="150" height="75">
+                <span><<</span>
             </a>
         </div>
     </div>
