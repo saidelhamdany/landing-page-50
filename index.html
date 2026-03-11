@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>💰 إربح 50 دولار للساعة</title>
+    <title>💰 إربح 50 دولار للساعة - بدون رأس مال</title>
     <style>
         /* Reset أساسي */
         * {
@@ -15,11 +15,11 @@
 
         body {
             min-height: 100vh;
-            background: #8a2be2;  /* خلفية بنفسجية */
+            background: linear-gradient(145deg, #0b1120 0%, #19233c 100%);
             display: flex;
-            align-items: flex-start;
+            align-items: flex-start;  /* تغيير من center إلى flex-start لرفع المحتوى للأعلى */
             justify-content: center;
-            padding: 20px 16px 0;
+            padding: 20px 16px 0;  /* تقليل المسافة العلوية */
             margin: 0;
         }
 
@@ -31,18 +31,18 @@
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 215, 0, 0.25);
             border-radius: 40px;
-            padding: 25px 24px 30px;
+            padding: 25px 24px 30px;  /* تقليل المسافة العلوية داخل البطاقة */
             box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(255, 215, 0, 0.1) inset;
             text-align: center;
             transition: all 0.2s ease;
-            margin-top: 10px;
+            margin-top: 10px;  /* رفع البطاقة لأقصى حد مع ترك مسافة بسيطة */
         }
 
         /* أيقونة أو إيموجي كبير */
         .emoji-badge {
-            font-size: 75px;
+            font-size: 75px;  /* تصغير طفيف */
             line-height: 1;
-            margin-bottom: 10px;
+            margin-bottom: 10px;  /* تقليل المسافة */
             filter: drop-shadow(0 10px 8px #00000066);
             transform: scale(1);
             animation: float 3s ease-in-out infinite;
@@ -54,15 +54,14 @@
             100% { transform: translateY(0px) scale(1); }
         }
 
-        /* العنوان الرئيسي */
         h1 {
-            font-size: 42px;
-            font-weight: 900;
+            font-size: 34px;
+            font-weight: 800;
             letter-spacing: -0.5px;
             line-height: 1.3;
             color: #ffffff;
             text-shadow: 0 4px 12px rgba(0,0,0,0.6);
-            margin-bottom: 25px;
+            margin-bottom: 5px;  /* تقليل المسافة */
         }
 
         .price-highlight {
@@ -70,80 +69,62 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            font-size: 52px;
+            font-size: 42px;
             font-weight: 900;
             display: inline-block;
             padding: 0 4px;
             text-shadow: 0 0 15px #f5b34280;
         }
 
-        .btn-wrapper {
-            margin: 15px 0 0;
+        .sub-text {
+            font-size: 24px;
+            color: #fdeaa8;
+            margin-top: -5px;
+            margin-bottom: 20px;  /* تقليل المسافة */
+            font-weight: 700;
         }
 
-        /* الزر الأصفر المتحرك */
+        .btn-wrapper {
+            margin: 15px 0 0;  /* تقليل المسافة */
+        }
+
         .cta-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
             width: 100%;
-            background: linear-gradient(145deg, #FFD700, #FDB913, #FFA500);
-            color: #000000;
-            font-size: 90px;
+            background: linear-gradient(145deg, #ffd966, #f2b807);
+            color: #0a0f1a;
+            font-size: 28px;
             font-weight: 900;
-            padding: 15px 20px;
+            padding: 20px 20px;  /* تقليل طفيف في الحجم */
             border-radius: 100px;
             text-decoration: none;
-            box-shadow: 0 15px 25px -8px rgba(255, 215, 0, 0.7), 0 4px 0 0 #B8860B, 0 0 20px #FFD700;
-            border: 2px solid #FFEC9E;
+            box-shadow: 0 15px 25px -8px #000000cc, 0 4px 0 0 #9e6d0e, 0 0 20px #ffd966;
+            border: 2px solid #fff4be;
             transition: all 0.15s ease;
+            text-shadow: 0 2px 4px #ffffff70;
             -webkit-tap-highlight-color: transparent;
-            animation: gentle-shake 2s ease-in-out infinite;
-            min-height: 100px;
-        }
-
-        /* علامة << */
-        .cta-button span {
-            display: inline-block;
-            font-size: 70px;
-            line-height: 1;
-            font-weight: 900;
-            letter-spacing: 8px;
-            filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.5));
-            transition: transform 0.2s ease;
-            transform: scale(1);
-            text-align: center;
-            margin: 0 auto;
-            margin-top: -10px;
-            color: #000000;
-        }
-
-        .cta-button:active span {
-            transform: scale(0.95);
-        }
-
-        /* حركة اهتزاز خفيفة */
-        @keyframes gentle-shake {
-            0%, 100% { transform: translateX(0); }
-            10%, 30%, 50% { transform: translateX(-2px); }
-            20%, 40%, 60% { transform: translateX(2px); }
-            70% { transform: translateX(0); }
         }
 
         .cta-button:active {
             transform: translateY(5px);
-            box-shadow: 0 8px 20px -4px #B8860B, 0 2px 0 0 #8B6910, 0 0 30px #FFD700;
-            animation: none;
+            box-shadow: 0 8px 20px -4px #000000, 0 2px 0 0 #9e6d0e, 0 0 30px #ffdb7c;
+        }
+
+        .cta-button span {
+            font-size: 30px;  /* تصغير طفيف */
+            margin-left: 8px;
+            filter: drop-shadow(0 2px 2px black);
+            vertical-align: middle;
         }
 
         /* تحسين شاشات صغيرة جداً */
         @media (max-width: 380px) {
             body { padding: 15px 16px 0; }
             .card { padding: 20px 16px 25px; margin-top: 5px; }
-            h1 { font-size: 34px; }
-            .price-highlight { font-size: 42px; }
-            .cta-button { font-size: 70px; padding: 12px 15px; min-height: 80px; }
-            .cta-button span { font-size: 60px; letter-spacing: 6px; margin-top: -8px; }
+            h1 { font-size: 28px; }
+            .price-highlight { font-size: 36px; }
+            .sub-text { font-size: 20px; margin-bottom: 15px; }
+            .cta-button { font-size: 24px; padding: 16px; }
             .emoji-badge { font-size: 65px; }
         }
     </style>
@@ -161,14 +142,17 @@
             إربح <span class="price-highlight">50 دولار</span> <br>
             للساعة
         </h1>
+        <div class="sub-text">
+            وبدون رأس مال 💸
+        </div>
 
-        <!-- الزر الأصفر مع << -->
+        <!-- الزر الرئيسي -->
         <div class="btn-wrapper">
             <a href="https://said-tv.com/%d8%b1%d8%a8%d8%ad-%d8%a3%d9%83%d8%ab%d8%b1-%d9%85%d9%86-50-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d9%84%d8%b3%d8%a7%d8%b9%d8%a9-%d9%88%d8%a8%d8%af%d9%88%d9%86-%d8%b1%d8%a3%d8%b3_%d9%85%d8%a7%d9%84/" 
                class="cta-button" 
                target="_blank" 
                rel="noopener noreferrer">
-                <span><<</span>
+                <span>💰</span> إضغط هنا للتفاصيل <span>💰</span>
             </a>
         </div>
     </div>
